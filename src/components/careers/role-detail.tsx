@@ -28,7 +28,7 @@ export function SarasLink() {
   return (
     <a
       className={styles.inlineLink}
-      href="https://saras.works"
+      href="https://sarasgmat.com"
       rel="noopener noreferrer"
       target="_blank"
     >
