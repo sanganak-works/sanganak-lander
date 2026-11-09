@@ -19,7 +19,7 @@ describe("Nav", () => {
 
     expect(screen.getByRole("link", { name: "Saras" })).toHaveAttribute(
       "href",
-      "https://saras.works",
+      "https://sarasgmat.com",
     );
     expect(screen.getByRole("link", { name: "Masala Dew" })).toHaveAttribute(
       "href",

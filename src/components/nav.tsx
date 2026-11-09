@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const links = [
-  { label: "Saras", href: "https://saras.works", external: true },
+  { label: "Saras", href: "https://sarasgmat.com", external: true },
   { label: "Masala Dew", href: "https://masaladew.com", external: true },
   { label: "Services", href: "/services", external: false },
   { label: "Careers", href: "/careers", external: false },

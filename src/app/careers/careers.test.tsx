@@ -111,7 +111,7 @@ describe("Careers routes", () => {
       expect(within(main).getByLabelText(`Product: ${product}`)).toHaveTextContent(product);
       expect(within(main).getByRole("link", { name: "Saras" })).toHaveAttribute(
         "href",
-        "https://saras.works",
+        "https://sarasgmat.com",
       );
       expect(within(main).getByRole("link", { name: "our manifesto" })).toHaveAttribute(
         "href",
