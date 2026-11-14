@@ -14,7 +14,7 @@ describe("Nav", () => {
     usePathname.mockReturnValue("/");
   });
 
-  it("provides the four required destinations", () => {
+  it("provides the five required destinations", () => {
     render(<Nav />);
 
     expect(screen.getByRole("link", { name: "Saras" })).toHaveAttribute(
@@ -29,10 +29,24 @@ describe("Nav", () => {
       "href",
       "/services",
     );
+    expect(screen.getByRole("link", { name: "AI Audits" })).toHaveAttribute(
+      "href",
+      "/audits",
+    );
     expect(screen.getByRole("link", { name: "Careers" })).toHaveAttribute(
       "href",
       "/careers",
     );
+  });
+
+  it("marks AI Audits active on its route", () => {
+    usePathname.mockReturnValue("/audits");
+    render(<Nav />);
+
+    const audits = screen.getByRole("link", { name: "AI Audits" });
+    expect(audits).toHaveAttribute("aria-current", "page");
+    expect(audits).toHaveAttribute("data-active", "true");
+    expect(screen.getByRole("link", { name: "Services" })).not.toHaveAttribute("aria-current");
   });
 
   it("exposes an accessible mobile menu control", async () => {

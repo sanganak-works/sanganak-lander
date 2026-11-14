@@ -1,0 +1,74 @@
+/* /audits page. Layout comes from coaches.module.css and
+   editorial.module.css; this file only adapts those blocks to the audit
+   content (three cards instead of four, and a two-column band). Element
+   selectors outrank the coaches rules whatever order the CSS loads in. */
+
+ol.threeSteps {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+li.step {
+  min-height: 250px;
+}
+
+/* Who it's for + ways to work together, side by side. Same spacing as the
+   /coaches team section. */
+.pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 64px;
+  padding: 80px 48px;
+}
+
+.pair section h2 {
+  font-size: 44px;
+  line-height: 1.02;
+}
+
+/* Same dash bullets as the manifesto's complaint callout. */
+.dashList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+  color: #332f2a;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.dashList li::before {
+  content: "- ";
+}
+
+@media (max-width: 1023px) {
+  ol.threeSteps {
+    grid-template-columns: 1fr;
+  }
+
+  li.step {
+    min-height: 0;
+  }
+
+  .pair {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 56px 32px;
+  }
+}
+
+@media (max-width: 599px) {
+  .pair {
+    gap: 40px;
+    padding-inline: 20px;
+  }
+
+  .pair section h2 {
+    font-size: 36px;
+  }
+
+  .dashList {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

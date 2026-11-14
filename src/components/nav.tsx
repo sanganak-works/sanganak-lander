@@ -10,6 +10,7 @@ const links = [
   { label: "Saras", href: "https://sarasgmat.com", external: true },
   { label: "Masala Dew", href: "https://masaladew.com", external: true },
   { label: "Services", href: "/services", external: false },
+  { label: "AI Audits", href: "/audits", external: false },
   { label: "Careers", href: "/careers", external: false },
 ] as const;
 
