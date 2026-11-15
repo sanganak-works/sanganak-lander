@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sanganak.ai"),
   title: "Sanganak",
   description:
-    "We advise about and build outcome-oriented agents for those outside the tech bubble",
+    "We build outcome-oriented AI agents for those outside the tech bubble",
   openGraph: {
     title: "Sanganak",
     description: "Frontier technology, for the rest of the world.",

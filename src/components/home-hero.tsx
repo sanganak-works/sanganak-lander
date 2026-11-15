@@ -21,8 +21,7 @@ export function HomeHero() {
             .
           </h1>
           <p>
-            We advise about and build outcome-oriented agents for those outside
-            the tech bubble
+            We build outcome-oriented AI agents for those outside the tech bubble
           </p>
         </div>
 
