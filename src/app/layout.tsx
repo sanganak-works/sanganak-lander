@@ -57,10 +57,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sanganak.ai"),
   title: "Sanganak",
   description:
-    "We build, write, and advise about tech and culture; from India for the world.",
+    "We advise about and build outcome-oriented agents for those outside the tech bubble",
   openGraph: {
     title: "Sanganak",
-    description: "Frontier technology, for those who deserve it.",
+    description: "Frontier technology, for the rest of the world.",
     siteName: "Sanganak",
     type: "website",
     url: "/",

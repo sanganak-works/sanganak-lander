@@ -8,20 +8,21 @@ export function HomeHero() {
         <div className="hero-copy-top">
           <h1
             id="home-heading"
-            aria-label="Frontier technology, for those who deserve it."
+            aria-label="Frontier technology, for the rest of the world."
           >
             Frontier technology,
             <br />
-            for those who
+            for the rest of
             <br />
+            the{" "}
             <Link className="hero-manifesto-link" href="/manifesto">
-              deserve
-            </Link>{" "}
-            it.
+              world
+            </Link>
+            .
           </h1>
           <p>
-            We build, write, and advise about tech and culture; from India for the
-            world.
+            We advise about and build outcome-oriented agents for those outside
+            the tech bubble
           </p>
         </div>
 

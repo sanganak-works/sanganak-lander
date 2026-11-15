@@ -9,12 +9,12 @@ describe("Home", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "Frontier technology, for those who deserve it.",
+        name: "Frontier technology, for the rest of the world.",
       }),
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        "We build, write, and advise about tech and culture; from India for the world.",
+        "We advise about and build outcome-oriented agents for those outside the tech bubble",
       ),
     ).toBeInTheDocument();
     expect(screen.getByText("01 / BUILD + WRITE + ADVISE")).toBeInTheDocument();
@@ -26,11 +26,11 @@ describe("Home", () => {
     );
   });
 
-  it("links the deserve headline word to the manifesto", () => {
+  it("links the world headline word to the manifesto", () => {
     render(<Home />);
 
     expect(screen.queryByText(/enter the manifesto/i)).not.toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "deserve" })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "world" })).toHaveAttribute(
       "href",
       "/manifesto",
     );
