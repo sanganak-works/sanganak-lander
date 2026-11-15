@@ -14,7 +14,7 @@ describe("Home", () => {
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        "We advise about and build outcome-oriented agents for those outside the tech bubble",
+        "We build outcome-oriented AI agents for those outside the tech bubble",
       ),
     ).toBeInTheDocument();
     expect(screen.getByText("01 / BUILD + WRITE + ADVISE")).toBeInTheDocument();
